@@ -35,3 +35,9 @@
 @media (max-width:1060px){.bar nav a.hide-s{display:none}}
 @media (max-width:900px){.brand .b1{font-size:22px}.brand .b2{font-size:11px;letter-spacing:.12em}}
 @media (max-width:640px){.brand-text{display:none}}
+
+/* king crab claim */
+.claim{display:inline-flex;gap:4px 10px;align-items:center;flex-wrap:wrap;margin:0 0 20px;padding:10px 18px;background:var(--gold);border-radius:12px;color:var(--navy);font-size:18px;font-weight:700;line-height:1.25}
+.claim b{text-transform:uppercase;letter-spacing:.1em;font-size:13px;background:var(--navy);color:var(--gold);padding:4px 8px;border-radius:6px}
+@media (max-width:900px){.claim{font-size:16px;margin-top:18px}}
+.kc-note{background:var(--sun-2,#FFF4E2);border-left:4px solid var(--gold);padding:12px 14px;border-radius:4px;margin:14px 0 4px;font-size:15px}

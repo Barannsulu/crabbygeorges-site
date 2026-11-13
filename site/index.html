@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Crabby George&#x27;s Seafood Buffet | All You Can Eat Seafood in Myrtle Beach, SC</title>
-<meta name="description" content="All-you-can-eat Calabash seafood buffet with 120+ items: snow crab legs, raw oysters, shrimp and slow roast prime rib. 7904 N Kings Hwy, Myrtle Beach. Coupons: $5 off before 4 PM.">
+<meta name="description" content="Myrtle Beach&#x27;s only all-you-can-eat Alaskan king crab legs, plus a 120+ item Calabash seafood buffet with snow crab, raw oysters and prime rib. 7904 N Kings Hwy. $5 off before 4 PM.">
 <link rel="canonical" href="https://crabbygeorges.com/">
 <meta property="og:type" content="restaurant">
 <meta property="og:site_name" content="Crabby George's Seafood Buffet">
 <meta property="og:title" content="Crabby George&#x27;s Seafood Buffet | All You Can Eat Seafood in Myrtle Beach, SC">
-<meta property="og:description" content="All-you-can-eat Calabash seafood buffet with 120+ items: snow crab legs, raw oysters, shrimp and slow roast prime rib. 7904 N Kings Hwy, Myrtle Beach. Coupons: $5 off before 4 PM.">
+<meta property="og:description" content="Myrtle Beach&#x27;s only all-you-can-eat Alaskan king crab legs, plus a 120+ item Calabash seafood buffet with snow crab, raw oysters and prime rib. 7904 N Kings Hwy. $5 off before 4 PM.">
 <meta property="og:url" content="https://crabbygeorges.com/">
 <meta property="og:image" content="https://crabbygeorges.com/media/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Instrument+Sans:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="/assets/site.css?v=2026-11-12">
+<link rel="stylesheet" href="/assets/site.css?v=2026-11-13">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Restaurant", "@id": "https://crabbygeorges.com/#restaurant", "name": "Crabby George's Seafood Buffet", "alternateName": "Crabby George's Calabash Seafood Buffet", "url": "https://crabbygeorges.com/", "telephone": "+1-843-839-4044", "image": ["https://crabbygeorges.com/media/crab-pile.webp", "https://crabbygeorges.com/media/sign.webp"], "logo": "https://crabbygeorges.com/img/logo.png", "servesCuisine": ["Seafood", "Calabash seafood", "Buffet", "Steak"], "acceptsReservations": true, "hasMenu": "https://crabbygeorges.com/menu/", "address": {"@type": "PostalAddress", "streetAddress": "7904 N Kings Hwy", "addressLocality": "Myrtle Beach", "addressRegion": "SC", "postalCode": "29572", "addressCountry": "US"}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"], "opens": "15:30", "closes": "21:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "14:00", "closes": "21:30"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "12:00", "closes": "22:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "12:00", "closes": "21:30"}]}]}</script>
 </head>
 <body>
@@ -44,11 +44,12 @@
       <button class="pause" id="pauseBtn" type="button">Pause</button>
     </div>
     <div class="copy" style="order:-1">
+      <p class="claim" id="heroClaim"><b>Myrtle Beach's only</b> all-you-can-eat Alaskan king crab legs</p>
       <p class="eyebrow" id="heroEyebrow">Calabash seafood buffet · Myrtle Beach, SC</p>
       <h1 id="h1"><span class="line"><span>All you</span></span><span class="line"><span>can eat</span></span><span class="line"><span class="red">seafood.</span></span></h1>
-      <p class="lede" id="heroLede">Snow crab legs, raw oysters, shrimp, slow roast prime rib and more than 120 items, a few blocks from the ocean on North Kings Highway.</p>
+      <p class="lede" id="heroLede">Unlimited Alaskan king crab legs brought to your table, plus snow crab, raw oysters, shrimp, slow roast prime rib and more than 120 buffet items on North Kings Highway.</p>
       <div class="ctas" id="heroCtas"><a class="btn red" href="/menu/">See menu &amp; prices</a><a class="btn line-btn" href="/coupons-and-discounts/">Get $5 off</a></div>
-      <div class="facts" id="heroFacts"><span><b>120+</b>buffet items</span><span><b>4.7★</b>on Google</span><span><b>Open today</b><span id="todayHours"></span></span></div>
+      <div class="facts" id="heroFacts"><span><b>Unlimited</b>king crab legs</span><span><b>120+</b>buffet items</span><span><b>4.7★</b>on Google</span><span><b>Open today</b><span id="todayHours"></span></span></div>
     </div>
   </div>
 </section>
@@ -80,10 +81,10 @@
         <video class="m-img" muted loop playsinline preload="none" poster="/media/prime-rib.webp" aria-label="A cook carving slow roast prime rib on the buffet"><source src="/media/prime-rib.mp4" type="video/mp4"></video>
       </article>
       <article class="step" data-i="3">
-        <p class="eyebrow">From the menu</p>
-        <h2>King crab by the pound.</h2>
-        <p>Order a full pound of Alaskan king crab legs or a 22 oz whole Maine lobster, each with 2 sides.</p>
-        <span class="price">King Crab Legs $79.99 · Maine Lobster Plate $44.99</span>
+        <p class="eyebrow">Only at Crabby George's</p>
+        <h2>All-you-can-eat king crab.</h2>
+        <p>Add unlimited Alaskan king crab legs to your buffet. Your server brings them fresh from the kitchen, round after round, as many as you want. Just want one plate? Order a full pound from the menu.</p>
+        <span class="price">All-you-can-eat king crab: add to your buffet · King Crab Legs 1 lb $79.99</span>
         <video class="m-img" muted loop playsinline preload="none" poster="/media/king-crab.webp" aria-label="Alaskan king crab legs piled high with lemon"><source src="/media/king-crab.mp4" type="video/mp4"></video>
       </article>
     </div>
@@ -119,6 +120,7 @@
       <div class="station"><h3>Soups</h3><p>She crab soup, clam chowder</p></div>
       <div class="station"><h3>Bakery</h3><p>Cheesecake, baklava, carrot cake, puddings, ice cream, fresh fruit</p></div>
     </div>
+    <div class="price-note"><strong>Unlimited king crab</strong><span>Add all-you-can-eat Alaskan king crab legs to your buffet for an additional price. Your server brings them to your table from the kitchen.</span></div>
     <div class="price-note"><strong>Buffet price?</strong><span>Prices change by day and time. Call <span class="sel">(843) 839-4044</span> or stop by, and bring a coupon.</span></div>
   </div>
 </section>
@@ -137,7 +139,7 @@
   <div class="wrap">
     <div class="head"><div><p class="eyebrow">Menu &amp; prices</p><h2 id="menu-h">Favorites from the menu</h2></div><p>Not doing the buffet? Every entrée comes with 2 sides. Order at your table or <a href="https://order.crabbygeorges.com">online for pickup</a>.</p></div>
     <div class="teaser">
-      <div class="item" data-img="/media/king-crab.webp"><div class="name"><h3 class="h4">King Crab Legs <span class="tag">1 lb</span></h3><span class="lead"></span></div><span class="price">$79.99</span></div>
+      <div class="item" data-img="/media/king-crab.webp"><div class="name"><h3 class="h4">King Crab Legs <span class="tag">1 lb</span> <span class="tag">or all you can eat</span></h3><span class="lead"></span></div><span class="price">$79.99</span></div>
       <div class="item" data-img="/img/maine-lobster.webp"><div class="name"><h3 class="h4">Maine Lobster Plate <span class="tag">22 oz</span></h3><span class="lead"></span></div><span class="price">$44.99</span></div>
       <div class="item"><div class="name"><h3 class="h4">Twin Lobster Tail</h3><span class="lead"></span></div><span class="price">$44.99</span></div>
       <div class="item" data-img="/media/snow-crab-plate.webp"><div class="name"><h3 class="h4">Snow Crab Legs <span class="tag">1 lb</span></h3><span class="lead"></span></div><span class="price">$32.99</span></div>
@@ -172,7 +174,8 @@
   <div class="wrap">
     <div class="head"><div><p class="eyebrow">FAQ</p><h2 id="faq-h">Good to know</h2></div></div>
     <details><summary>How much is the buffet?</summary><p>Buffet prices change by day and time. Call (843) 839-4044 or stop by for today&#x27;s price. Coupons: $2 off anytime or $5 off before 4 PM on the adult buffet.</p></details>
-    <details><summary>Are crab legs on the buffet?</summary><p>Yes. Alaskan snow crab legs are on the buffet. Alaskan king crab legs (1 lb) and the 22 oz whole Maine lobster are ordered separately from the menu.</p></details>
+    <details><summary>Do you have all-you-can-eat king crab legs?</summary><p>Yes. Crabby George&#x27;s is the only restaurant in Myrtle Beach with all-you-can-eat Alaskan king crab legs. Add it to your adult buffet for an additional price and your server brings king crab legs to your table from the kitchen, as many rounds as you want. You can also order a single 1 lb plate from the menu for $79.99.</p></details>
+    <details><summary>Are crab legs on the buffet?</summary><p>Yes. Alaskan snow crab legs are on the buffet line at no extra charge. All-you-can-eat Alaskan king crab legs are an add-on served by your server, and the 22 oz whole Maine lobster is ordered from the menu.</p></details>
     <details><summary>Can I order without the buffet?</summary><p>Yes. Seafood and steak entrées come with 2 sides, and you can order online for pickup at order.crabbygeorges.com.</p></details>
     <details><summary>Do you take reservations?</summary><p>Yes. Book online at reserve.crabbygeorges.com or call (843) 839-4044.</p></details>
     <details><summary>Is there a kids menu?</summary><p>Yes. Kids meals for ages 5 and under include chicken tenders, corn dogs, fried rice and corn on the cob.</p></details>
@@ -195,6 +198,6 @@
 <div class="peek" id="peek" aria-hidden="true"><img alt="" src="/media/snow-crab-plate.webp"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-<script src="/assets/site.js?v=2026-11-12" defer></script>
+<script src="/assets/site.js?v=2026-11-13" defer></script>
 </body>
 </html>

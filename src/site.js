@@ -76,7 +76,7 @@
     tl.fromTo('#reel', { clipPath: 'inset(46% 0% 46% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: 1.1, ease: 'expo.inOut' }, 0)
       .fromTo('#heroVid', { scale: 1.3 }, { scale: 1, duration: 2.2, ease: 'power3.out' }, 0)
       .from('#h1 .line > span', { yPercent: 110, duration: 1, stagger: 0.12 }, 0.55)
-      .from('#heroEyebrow,#heroLede,#heroCtas,#heroFacts', { y: 20, opacity: 0, duration: 0.7, stagger: 0.08 }, 0.95);
+      .from('#heroClaim,#heroEyebrow,#heroLede,#heroCtas,#heroFacts', { y: 20, opacity: 0, duration: 0.7, stagger: 0.08 }, 0.95);
     gsap.to('#reel', { yPercent: 8, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
   }
   if ($('.band')) {

@@ -41,7 +41,8 @@ BUSINESS = {
 
 FAQ = [
     ("How much is the buffet?", "Buffet prices change by day and time. Call (843) 839-4044 or stop by for today's price. Coupons: $2 off anytime or $5 off before 4 PM on the adult buffet."),
-    ("Are crab legs on the buffet?", "Yes. Alaskan snow crab legs are on the buffet. Alaskan king crab legs (1 lb) and the 22 oz whole Maine lobster are ordered separately from the menu."),
+    ("Do you have all-you-can-eat king crab legs?", "Yes. Crabby George's is the only restaurant in Myrtle Beach with all-you-can-eat Alaskan king crab legs. Add it to your adult buffet for an additional price and your server brings king crab legs to your table from the kitchen, as many rounds as you want. You can also order a single 1 lb plate from the menu for $79.99."),
+    ("Are crab legs on the buffet?", "Yes. Alaskan snow crab legs are on the buffet line at no extra charge. All-you-can-eat Alaskan king crab legs are an add-on served by your server, and the 22 oz whole Maine lobster is ordered from the menu."),
     ("Can I order without the buffet?", "Yes. Seafood and steak entrées come with 2 sides, and you can order online for pickup at order.crabbygeorges.com."),
     ("Do you take reservations?", "Yes. Book online at reserve.crabbygeorges.com or call (843) 839-4044."),
     ("Is there a kids menu?", "Yes. Kids meals for ages 5 and under include chicken tenders, corn dogs, fried rice and corn on the cob."),
@@ -225,7 +226,7 @@ TEASER = '''<section class="light section" id="menu" aria-labelledby="menu-h">
   <div class="wrap">
     <div class="head"><div><p class="eyebrow">Menu &amp; prices</p><h2 id="menu-h">Favorites from the menu</h2></div><p>Not doing the buffet? Every entrée comes with 2 sides. Order at your table or <a href="https://order.crabbygeorges.com">online for pickup</a>.</p></div>
     <div class="teaser">
-      <div class="item" data-img="/media/king-crab.webp"><div class="name"><h3 class="h4">King Crab Legs <span class="tag">1 lb</span></h3><span class="lead"></span></div><span class="price">$79.99</span></div>
+      <div class="item" data-img="/media/king-crab.webp"><div class="name"><h3 class="h4">King Crab Legs <span class="tag">1 lb</span> <span class="tag">or all you can eat</span></h3><span class="lead"></span></div><span class="price">$79.99</span></div>
       <div class="item" data-img="/img/maine-lobster.webp"><div class="name"><h3 class="h4">Maine Lobster Plate <span class="tag">22 oz</span></h3><span class="lead"></span></div><span class="price">$44.99</span></div>
       <div class="item"><div class="name"><h3 class="h4">Twin Lobster Tail</h3><span class="lead"></span></div><span class="price">$44.99</span></div>
       <div class="item" data-img="/media/snow-crab-plate.webp"><div class="name"><h3 class="h4">Snow Crab Legs <span class="tag">1 lb</span></h3><span class="lead"></span></div><span class="price">$32.99</span></div>
@@ -245,8 +246,8 @@ def build():
     faq_ld = {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in FAQ]}
     pages = []
     pages.append(page("/", "Crabby George's Seafood Buffet | All You Can Eat Seafood in Myrtle Beach, SC",
-        "All-you-can-eat Calabash seafood buffet with 120+ items: snow crab legs, raw oysters, shrimp and slow roast prime rib. 7904 N Kings Hwy, Myrtle Beach. Coupons: $5 off before 4 PM.",
-        "\n".join([hero, part("band"), part("feature"), part("gallery"), part("buffet"), part("coupons"), TEASER, part("visit"), faq_html(FAQ[:5], more=True)]), peek=True))
+        "Myrtle Beach's only all-you-can-eat Alaskan king crab legs, plus a 120+ item Calabash seafood buffet with snow crab, raw oysters and prime rib. 7904 N Kings Hwy. $5 off before 4 PM.",
+        "\n".join([hero, part("band"), part("feature"), part("gallery"), part("buffet"), part("coupons"), TEASER, part("visit"), faq_html(FAQ[:6], more=True)]), peek=True))
     pages.append(page("/menu/", "Menu & Prices | Crabby George's Seafood Buffet, Myrtle Beach",
         "Full menu with prices: king crab legs $79.99, Maine lobster $44.99, snow crab legs $32.99, steaks, fried seafood, appetizers, soups and kids meals. Order online for pickup.",
         pagehead("Menu &amp; Prices", "Seafood and steak entrées with 2 sides, appetizers, soups and kids meals. Buffet prices change by day and time, so call (843) 839-4044 for today's buffet price.", "Crabby George's Seafood Buffet") + "\n" + part("menu").replace('<h2 id="menu-h">Order from the menu</h2>', '<h2 id="menu-h">Order from the menu</h2>'),
@@ -306,6 +307,7 @@ def build():
 - Hours: Mon–Thu 3:30–9 PM, Fri 2–9:30 PM, Sat 12–10 PM, Sun 12–9:30 PM
 - Buffet price: changes by day and time; call (843) 839-4044. Coupons: $2 off anytime, $5 off before 4 PM (adult buffet).
 - On the buffet: Alaskan snow crab legs, raw oysters, shrimp, mussels, clams, slow roast prime rib, Calabash style fried seafood
+- All-you-can-eat Alaskan king crab legs: the only one in Myrtle Beach; add-on to the adult buffet for an additional price, served to the table by your server
 - From the menu: King crab legs 1 lb $79.99, Maine lobster plate 22 oz $44.99, snow crab legs $32.99
 - Online ordering: https://order.crabbygeorges.com  Reservations: https://reserve.crabbygeorges.com
 
