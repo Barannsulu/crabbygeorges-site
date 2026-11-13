@@ -44,3 +44,4 @@
 .claim em{font-style:normal;color:var(--gold)}
 @media (max-width:900px){.claim{margin-top:22px}}
 .kc-note{background:var(--sun-2,#FFF4E2);border-left:4px solid var(--gold);padding:12px 14px;border-radius:4px;margin:14px 0 4px;font-size:15px}
+.claim .n{font-size:13px;color:#BFB9AD}
