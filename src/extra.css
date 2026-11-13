@@ -23,3 +23,15 @@
 .foot-nav{flex-basis:100%;display:flex;flex-wrap:wrap;gap:6px 22px;padding-top:18px;border-top:1px solid rgba(230,180,80,.2)}
 .foot-nav a{color:#CFC9BC;text-decoration:none;font-weight:600;font-size:15px}
 .foot-nav a:hover{color:var(--gold)}
+
+/* header wordmark next to the logo */
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--bone);min-width:0}
+.brand-text{display:flex;flex-direction:column;line-height:1}
+.brand .b1{font-family:var(--f-display);font-weight:800;text-transform:uppercase;font-size:28px;letter-spacing:.01em;white-space:nowrap}
+.brand .b2{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-top:5px;white-space:nowrap}
+.brand:hover .b1{color:var(--gold)}
+.bar nav{flex-wrap:nowrap}
+.bar nav a{white-space:nowrap}
+@media (max-width:1060px){.bar nav a.hide-s{display:none}}
+@media (max-width:900px){.brand .b1{font-size:22px}.brand .b2{font-size:11px;letter-spacing:.12em}}
+@media (max-width:640px){.brand-text{display:none}}
