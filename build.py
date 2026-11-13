@@ -246,7 +246,7 @@ def build():
     faq_ld = {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in FAQ]}
     pages = []
     pages.append(page("/", "Crabby George's Seafood Buffet | All You Can Eat Seafood in Myrtle Beach, SC",
-        "Myrtle Beach's only all-you-can-eat Alaskan king crab legs, plus a 120+ item Calabash seafood buffet with snow crab, raw oysters and prime rib. 7904 N Kings Hwy. $5 off before 4 PM.",
+        "Myrtle Beach's only all-you-can-eat Alaskan king crab legs, plus a 120+ item Calabash seafood buffet with snow crab, raw oysters and slow roast prime rib at 7904 N Kings Hwy, Myrtle Beach.",
         "\n".join([hero, part("band"), part("feature"), part("gallery"), part("buffet"), part("coupons"), TEASER, part("visit"), faq_html(FAQ[:6], more=True)]), peek=True))
     pages.append(page("/menu/", "Menu & Prices | Crabby George's Seafood Buffet, Myrtle Beach",
         "Full menu with prices: king crab legs $79.99, Maine lobster $44.99, snow crab legs $32.99, steaks, fried seafood, appetizers, soups and kids meals. Order online for pickup.",
