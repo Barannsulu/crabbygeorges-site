@@ -221,8 +221,11 @@ footer .proto{margin-left:auto;font-size:13px;color:var(--gold)}
 @media (max-width:900px){.brand .b1{font-size:22px}.brand .b2{font-size:11px;letter-spacing:.12em}}
 @media (max-width:640px){.brand-text{display:none}}
 
-/* king crab claim */
-.claim{display:inline-flex;gap:4px 10px;align-items:center;flex-wrap:wrap;margin:0 0 20px;padding:10px 18px;background:var(--gold);border-radius:12px;color:var(--navy);font-size:18px;font-weight:700;line-height:1.25}
-.claim b{text-transform:uppercase;letter-spacing:.1em;font-size:13px;background:var(--navy);color:var(--gold);padding:4px 8px;border-radius:6px}
-@media (max-width:900px){.claim{font-size:16px;margin-top:18px}}
+/* king crab claim: a gold-ruled kicker, not a sticker */
+.claim{display:flex;flex-direction:column;gap:8px;margin:0 0 28px;padding:2px 0 2px 16px;border-left:3px solid var(--gold)}
+.claim .k{display:flex;align-items:center;gap:10px;font-size:12px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+.claim .k::after{content:"";width:40px;height:1px;background:var(--gold);opacity:.6}
+.claim .t{font-family:var(--f-display);font-weight:800;text-transform:uppercase;font-size:clamp(22px,2.3vw,30px);line-height:1.02;letter-spacing:.01em;color:var(--bone)}
+.claim em{font-style:normal;color:var(--gold)}
+@media (max-width:900px){.claim{margin-top:22px}}
 .kc-note{background:var(--sun-2,#FFF4E2);border-left:4px solid var(--gold);padding:12px 14px;border-radius:4px;margin:14px 0 4px;font-size:15px}
