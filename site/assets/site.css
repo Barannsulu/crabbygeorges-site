@@ -230,3 +230,14 @@ footer .proto{margin-left:auto;font-size:13px;color:var(--gold)}
 @media (max-width:900px){.claim{margin-top:22px}}
 .kc-note{background:var(--sun-2,#FFF4E2);border-left:4px solid var(--gold);padding:12px 14px;border-radius:4px;margin:14px 0 4px;font-size:15px}
 .claim .n{font-size:13px;color:#BFB9AD}
+/* reservations */
+.res-row{display:grid;grid-template-columns:1.3fr 1fr .8fr;gap:12px}
+.res-row label{display:block}
+@media (max-width:640px){.res-row{grid-template-columns:1fr 1fr}.res-row>div:first-child{grid-column:1/-1}}
+.res-hint{margin:2px 0 0;color:#6b5f48;font-size:15px}
+.res-hint:empty{display:none}
+.res-msg{margin:18px 0;padding:16px 18px;border-radius:8px;background:#FFF3D6;border:1.5px solid #E2B44A;font-size:17px;line-height:1.5}
+.res-msg.ok{background:#E8F6EC;border-color:#4FA36B}
+.res-msg[hidden]{display:none}
+.form button:disabled{opacity:.6;cursor:wait}
+.form[hidden]{display:none}

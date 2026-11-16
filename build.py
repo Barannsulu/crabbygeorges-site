@@ -236,11 +236,38 @@ TEASER = '''<section class="light section" id="menu" aria-labelledby="menu-h">
   </div>
 </section>'''
 
+RES_FORM = '''<section class="light section">
+  <div class="wrap narrow">
+    <p class="res-msg warn" id="resNotice" hidden></p>
+    <form id="resForm" class="form" novalidate>
+      <p class="hp"><label>Leave this empty <input name="company" tabindex="-1" autocomplete="off"></label></p>
+      <div class="res-row">
+        <div><label for="resDate">Date *</label><input id="resDate" name="date" type="date" required></div>
+        <div><label for="resTime">Time *</label><select id="resTime" name="time" required><option value="">Pick a date first</option></select></div>
+        <div><label for="resParty">Guests *</label><select id="resParty" name="party" required></select></div>
+      </div>
+      <p class="res-hint" id="resDayNote"></p>
+      <p class="res-hint" id="resLarge"></p>
+      <label for="resName">Name *</label><input id="resName" name="name" type="text" autocomplete="name" required>
+      <label for="resPhone">Phone *</label><input id="resPhone" name="phone" type="tel" autocomplete="tel" required>
+      <label for="resEmail">Email (for your confirmation)</label><input id="resEmail" name="email" type="email" autocomplete="email">
+      <div id="resExtra"></div>
+      <label for="resNotes">Anything we should know?</label><textarea id="resNotes" name="notes" rows="3" placeholder="Birthday, high chair, wheelchair access…"></textarea>
+      <button class="btn red" type="submit">Reserve my table</button>
+    </form>
+    <div class="res-msg" id="resMsg" role="status" hidden></div>
+  </div>
+</section>
+<script src="/assets/reserve.js?v=''' + TODAY + '''" defer></script>'''
+
 def build():
     css = (SRC / "site.css").read_text() + (SRC / "extra.css").read_text()
     (OUT / "assets").mkdir(parents=True, exist_ok=True)
     (OUT / "assets" / "site.css").write_text(css)
     (OUT / "assets" / "site.js").write_text((SRC / "site.js").read_text())
+    (OUT / "assets" / "reserve.js").write_text((SRC / "reserve.js").read_text())
+    (OUT / "reservations").mkdir(parents=True, exist_ok=True)
+    (OUT / "reservations" / "rules.json").write_text((SRC / "reservations.json").read_text())
 
     hero = fix_links(part("hero"))
     faq_ld = {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in FAQ]}
@@ -278,6 +305,10 @@ def build():
                               field("Subject", "subject", "select", True, ["General question", "Large group or bus tour", "Feedback", "Other"]),
                               field("Message", "message", "textarea")], "Send message"),
         crumbs="Contact"))
+    pages.append(page("/reservations/", "Reservations | Book a Table at Crabby George's Seafood Buffet, Myrtle Beach",
+        "Reserve a table at Crabby George's Seafood Buffet, 7904 N Kings Hwy, Myrtle Beach. Pick a date, time and party size online, or call (843) 839-4044.",
+        pagehead("Reserve a table", "Pick a date, time and party size. You will get a confirmation code right away.", "Reservations") + "\n" + RES_FORM,
+        crumbs="Reservations"))
     pages.append(page("/job-application/", "Jobs | Work at Crabby George's Seafood Buffet, Myrtle Beach",
         "Apply to work at Crabby George's Seafood Buffet in Myrtle Beach: servers, hosts, bussers, kitchen and buffet staff.",
         pagehead("Join our crew", "Fill out the form and we'll get back to you.", "Jobs") + "\n" +
