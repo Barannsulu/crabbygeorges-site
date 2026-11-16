@@ -1,6 +1,6 @@
 # Old WordPress URLs -> new pages (301 = permanent, keeps Google rankings)
-/reservation          https://reserve.crabbygeorges.com  301
-/reservation/         https://reserve.crabbygeorges.com  301
+/reservation          /reservations/                     301
+/reservation/         /reservations/                     301
 /news                 /                                  301
 /news/*               /                                  301
 /virtual-tour         /all-you-can-eat-buffet/           301

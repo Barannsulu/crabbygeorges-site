@@ -44,7 +44,7 @@ FAQ = [
     ("Do you have all-you-can-eat king crab legs?", "Yes. Crabby George's is the only restaurant in Myrtle Beach with all-you-can-eat Alaskan king crab legs. Add it to your adult buffet for an additional price and your server brings king crab legs to your table from the kitchen, as many rounds as you want. You can also order a single 1 lb plate from the menu for $79.99."),
     ("Are crab legs on the buffet?", "Yes. Alaskan snow crab legs are on the buffet line at no extra charge. All-you-can-eat Alaskan king crab legs are an add-on served by your server, and the 22 oz whole Maine lobster is ordered from the menu."),
     ("Can I order without the buffet?", "Yes. Seafood and steak entrées come with 2 sides, and you can order online for pickup at order.crabbygeorges.com."),
-    ("Do you take reservations?", "Yes. Book online at reserve.crabbygeorges.com or call (843) 839-4044."),
+    ("Do you take reservations?", "Yes. Book online at crabbygeorges.com/reservations or call (843) 839-4044."),
     ("Is there a kids menu?", "Yes. Kids meals for ages 5 and under include chicken tenders, corn dogs, fried rice and corn on the cob."),
     ("What are your hours?", "Monday to Thursday 3:30 PM to 9 PM, Friday 2 PM to 9:30 PM, Saturday 12 PM to 10 PM and Sunday 12 PM to 9:30 PM. Holiday hours may differ."),
     ("Where are you located?", "7904 N Kings Hwy, Myrtle Beach, SC 29572, a few blocks from the oceanfront and minutes from Broadway at the Beach."),
@@ -159,7 +159,7 @@ def field(label, name, kind="text", required=True, options=None):
 FOOTER_NAV = '''<nav class="foot-nav" aria-label="Footer">
       <a href="/menu/">Menu &amp; Prices</a><a href="/all-you-can-eat-buffet/">Buffet</a><a href="/coupons-and-discounts/">Coupons</a><a href="/drinks/">Drinks</a>
       <a href="/location/">Hours &amp; Directions</a><a href="/faq/">FAQ</a><a href="/contact/">Contact</a><a href="/job-application/">Jobs</a>
-      <a href="https://order.crabbygeorges.com">Order Online</a><a href="https://reserve.crabbygeorges.com">Reservations</a>
+      <a href="https://order.crabbygeorges.com">Order Online</a><a href="/reservations/">Reservations</a>
     </nav>'''
 
 def footer():
@@ -340,7 +340,7 @@ def build():
 - On the buffet: Alaskan snow crab legs, raw oysters, shrimp, mussels, clams, slow roast prime rib, Calabash style fried seafood
 - All-you-can-eat Alaskan king crab legs: the only one in Myrtle Beach; add-on to the adult buffet for an additional price, served to the table by your server
 - From the menu: King crab legs 1 lb $79.99, Maine lobster plate 22 oz $44.99, snow crab legs $32.99
-- Online ordering: https://order.crabbygeorges.com  Reservations: https://reserve.crabbygeorges.com
+- Online ordering: https://order.crabbygeorges.com  Reservations: {DOMAIN}/reservations/
 
 ## Pages
 - [Menu & prices]({DOMAIN}/menu/)
