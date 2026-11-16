@@ -1,6 +1,6 @@
 {
   "enabled": true,
-  "endpoint": "",
+  "endpoint": "https://script.google.com/macros/s/AKfycbypw1jkv6g3wDGMs38WEh0pOfAXwx6_K2f00uxahBCzVfauDPrnh3HNpH0m8L60qiJY/exec",
   "closedMessage": "Online reservations are paused right now. Please call us at (843) 839-4044.",
   "notice": "",
   "slotMinutes": 30,
@@ -12,13 +12,34 @@
   "largePartyMessage": "For groups larger than 20, please call (843) 839-4044.",
   "maxGuestsPerSlot": 0,
   "hours": {
-    "mon": ["15:30", "21:00"],
-    "tue": ["15:30", "21:00"],
-    "wed": ["15:30", "21:00"],
-    "thu": ["15:30", "21:00"],
-    "fri": ["14:00", "21:30"],
-    "sat": ["12:00", "22:00"],
-    "sun": ["12:00", "21:30"]
+    "mon": [
+      "15:30",
+      "21:00"
+    ],
+    "tue": [
+      "15:30",
+      "21:00"
+    ],
+    "wed": [
+      "15:30",
+      "21:00"
+    ],
+    "thu": [
+      "15:30",
+      "21:00"
+    ],
+    "fri": [
+      "14:00",
+      "21:30"
+    ],
+    "sat": [
+      "12:00",
+      "22:00"
+    ],
+    "sun": [
+      "12:00",
+      "21:30"
+    ]
   },
   "closures": [],
   "extraFields": []
