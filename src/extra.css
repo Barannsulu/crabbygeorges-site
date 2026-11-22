@@ -59,3 +59,4 @@
 
 .holiday{margin:18px 0 0;padding:12px 16px;border-left:3px solid var(--gold);background:rgba(242,182,50,.1);font-size:16px;line-height:1.5}
 .holiday strong{color:var(--gold)}
+.hours .hol{display:inline-block;margin-left:8px;padding:2px 8px;border-radius:999px;background:rgba(242,182,50,.18);color:var(--gold);font-size:12px;font-weight:700;letter-spacing:.3px;vertical-align:middle}

@@ -86,4 +86,4 @@
 })();
 
 /* hide holiday notes after their date */
-(function(){try{var t=new Date().toISOString().slice(0,10);document.querySelectorAll('[data-until]').forEach(function(el){if(t>=el.getAttribute('data-until'))el.remove();});}catch(e){}})();
+(function(){try{var t=new Date().toISOString().slice(0,10);document.querySelectorAll('[data-until]').forEach(function(el){if(t<el.getAttribute('data-until'))return;var r=el.querySelector('[data-regular]');if(r){r.textContent=r.getAttribute('data-regular');var h=el.querySelector('.hol');if(h)h.remove();el.removeAttribute('data-until');}else el.remove();});}catch(e){}})();
