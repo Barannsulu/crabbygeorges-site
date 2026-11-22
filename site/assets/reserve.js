@@ -14,7 +14,7 @@
     if (!r || !r.enabled || !dateStr) return [];
     if (dateStr < todayStr || dateStr > addDays(todayStr, r.maxDaysAhead || 60)) return [];
     var day = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'][new Date(dateStr + 'T12:00:00Z').getUTCDay()];
-    var h = r.hours && r.hours[day];
+    var h = (r.specialHours && r.specialHours[dateStr]) || (r.hours && r.hours[day]);
     if (!h) return [];
     var start = toMin(h[0]), end = toMin(h[1]) - (r.lastSeatingBeforeCloseMinutes || 0), step = r.slotMinutes || 30;
     var blocks = (r.closures || []).filter(function (c) { return dateStr >= c.date && dateStr <= (c.until || c.date); });

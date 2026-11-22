@@ -56,3 +56,6 @@
 .res-msg[hidden]{display:none}
 .form button:disabled{opacity:.6;cursor:wait}
 .form[hidden]{display:none}
+
+.holiday{margin:18px 0 0;padding:12px 16px;border-left:3px solid var(--gold);background:rgba(242,182,50,.1);font-size:16px;line-height:1.5}
+.holiday strong{color:var(--gold)}

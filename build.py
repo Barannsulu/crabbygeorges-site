@@ -37,6 +37,10 @@ BUSINESS = {
         {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "12:00", "closes": "22:00"},
         {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "12:00", "closes": "21:30"},
     ],
+    "specialOpeningHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "validFrom": "2026-11-26", "validThrough": "2026-11-26", "opens": "12:00", "closes": "21:00"},
+        {"@type": "OpeningHoursSpecification", "validFrom": "2026-11-27", "validThrough": "2026-11-27", "opens": "12:00", "closes": "21:30"},
+    ],
 }
 
 FAQ = [
@@ -46,7 +50,7 @@ FAQ = [
     ("Can I order without the buffet?", "Yes. Seafood and steak entrées come with 2 sides, and you can order online for pickup at order.crabbygeorges.com."),
     ("Do you take reservations?", "Yes. Book online at crabbygeorges.com/reservations or call (843) 839-4044."),
     ("Is there a kids menu?", "Yes. Kids meals for ages 5 and under include chicken tenders, corn dogs, fried rice and corn on the cob."),
-    ("What are your hours?", "Monday to Thursday 3:30 PM to 9 PM, Friday 2 PM to 9:30 PM, Saturday 12 PM to 10 PM and Sunday 12 PM to 9:30 PM. Holiday hours may differ."),
+    ("What are your hours?", "Monday to Thursday 3:30 PM to 9 PM, Friday 2 PM to 9:30 PM, Saturday 12 PM to 10 PM and Sunday 12 PM to 9:30 PM. On Thanksgiving Day (Thursday, November 26) and Friday, November 27 we open at 12 PM."),
     ("Where are you located?", "7904 N Kings Hwy, Myrtle Beach, SC 29572, a few blocks from the oceanfront and minutes from Broadway at the Beach."),
     ("What is Calabash style seafood?", "Calabash style means seafood that is lightly breaded and quickly fried, a tradition from the Carolina coast. Our fried bar has Calabash style shrimp, oysters, scallops, flounder and more."),
     ("How many items are on the buffet?", "More than 120 items, including snow crab legs, raw oysters, shrimp, mussels, clams, prime rib, steaks, fried seafood, Southern sides and desserts."),

@@ -84,3 +84,6 @@
     gsap.from('.band .over p', { scale: 0.86, opacity: 0, duration: 1, ease: 'power3.out', scrollTrigger: { trigger: '.band', start: 'top 75%' } });
   }
 })();
+
+/* hide holiday notes after their date */
+(function(){try{var t=new Date().toISOString().slice(0,10);document.querySelectorAll('[data-until]').forEach(function(el){if(t>=el.getAttribute('data-until'))el.remove();});}catch(e){}})();
